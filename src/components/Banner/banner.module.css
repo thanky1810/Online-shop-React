@@ -1,4 +1,41 @@
+.banner {
+}
+
 .mainImg {
   height: 100%;
   width: 100%;
+}
+
+.wrapper {
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contentWrapper {
+  font-weight: bold;
+}
+
+.p1 {
+}
+
+.p2 {
+}
+
+.h3 {
+  margin: 0;
+  display: block;
+  font-size: 4em;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+.button {
+  color: white;
+  text-decoration: none;
+  padding: 6px 15px;
+  background-color: black;
+  border-radius: 20px;
 }
