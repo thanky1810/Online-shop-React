@@ -1,0 +1,61 @@
+.Entirewrapper {
+  margin-top: 84px;
+}
+
+.imgContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  height: 400px;
+}
+
+.img1,
+.img2 {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+}
+
+.img1 img,
+.img2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Keeps image ratio while covering area */
+  display: block;
+}
+
+.textContainer {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  color: white;
+  max-width: 90%;
+}
+
+.textContainer p {
+  margin: 0.3em 0;
+  font-size: 1rem;
+}
+
+.textContainer h3 {
+  margin: 0.3em 0 0.8em 0;
+  font-size: 1.3rem;
+}
+
+.textContainer button {
+  padding: 0.6em 1.2em;
+  font-size: 0.9rem;
+  background: white;
+  border: none;
+  border-radius: 20px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.textContainer button:hover {
+  background-color: black;
+  color: white;
+}
