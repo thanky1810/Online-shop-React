@@ -1,0 +1,43 @@
+.footerWrapper {
+  margin-top: 84px;
+}
+
+.footerContentInfo {
+  padding: 48px;
+  min-height: 300px;
+  max-width: 1920px;
+  margin: auto;
+}
+
+.footerBorder {
+  height: 1px;
+  background-color: #e5e5e5;
+  margin-bottom: 60px;
+}
+
+.footerMenu {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+}
+
+a {
+  font: 17px;
+  text-decoration: none;
+  color: #707072;
+}
+
+h2 {
+  font-size: 17px;
+  color: #111111;
+  height: 12px;
+  margin-bottom: 12px;
+}

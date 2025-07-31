@@ -26,6 +26,7 @@ function Featured() {
             <button>Get Notified</button>
           </div>
         </div>
+        
       </div>
     </div>
   );
