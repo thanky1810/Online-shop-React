@@ -1,6 +1,6 @@
 import clsx from "clsx";
 
-import styles from "./banner.module.css";
+import styles from "./banner.module.scss";
 import nikeImage from "../../assets/images/nike-just-do-it.png";
 
 function Banner() {

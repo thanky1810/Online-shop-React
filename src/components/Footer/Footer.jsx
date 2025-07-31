@@ -2,13 +2,13 @@ import clsx from "clsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
-import styles from "./Footer.module.css";
+import styles from "./Footer.module.scss";
 
 function Footer() {
   return (
     <div className={clsx(styles.footerWrapper)}>
       <footer className={clsx(styles.footerContentInfo)}>
-        <div class={clsx(styles.footerBorder)}></div>
+        <div className={clsx(styles.footerBorder)}></div>
         <div className={clsx(styles.footerMenu)}>
           <div className={clsx(styles.footerColumn)}>
             <h2>Resources</h2>
@@ -58,12 +58,76 @@ function Footer() {
         <div className={clsx(styles.footerSpacer)}></div>
         <div className={clsx(styles.footerEnd)}>
           <ul className={clsx(styles.footerList)}>
-            <li>
+            <li className={clsx(styles.firstChild)}>
               <p>
                 <span>© 2025 Nike, Inc. All Rights Reserved</span>
               </p>
             </li>
-            <li>Guides</li>
+            <li>
+              <div className={clsx(styles.guidesWrapper)}>
+                <details className={clsx(styles.guidesDetail)} open>
+                  <summary aria-expanded="true">
+                    <p>Guides</p>
+                  </summary>
+                  <div className={clsx(styles.footerDropdown)}>
+                    <div className={clsx(styles.linkContainer)}>
+                      <ul>
+                        <li className={clsx(styles.dropdownListItem)}>
+                          <a href="#">
+                            <p>Nike Air</p>
+                          </a>
+                        </li>
+                        <li className={clsx(styles.dropdownListItem)}>
+                          <a href="#">
+                            <p>Nike Air Force 1</p>
+                          </a>
+                        </li>
+                        <li className={clsx(styles.dropdownListItem)}>
+                          <a href="#">
+                            <p>Nike Air Max</p>
+                          </a>
+                        </li>
+                        <li className={clsx(styles.dropdownListItem)}>
+                          <a href="#">
+                            <p>Nike FlyEase</p>
+                          </a>
+                        </li>
+                        <li className={clsx(styles.dropdownListItem)}>
+                          <a href="#">
+                            <p>Nike Fkyknit</p>
+                          </a>
+                        </li>
+                        <li className={clsx(styles.dropdownListItem)}>
+                          <a href="#">
+                            <p>Nike Free</p>
+                          </a>
+                        </li>
+                        <li className={clsx(styles.dropdownListItem)}>
+                          <a href="#">
+                            <p>Nike React</p>
+                          </a>
+                        </li>
+                        <li className={clsx(styles.dropdownListItem)}>
+                          <a href="#">
+                            <p>Nike Vaporfly</p>
+                          </a>
+                        </li>
+                        <li className={clsx(styles.dropdownListItem)}>
+                          <a href="#">
+                            <p>Nike ZoomX</p>
+                          </a>
+                        </li>
+                        <li className={clsx(styles.dropdownListItem)}>
+                          <a href="#">
+                            <p>Nike Hippie</p>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </li>
             <li>Terms of Sale</li>
             <li>Terms of Use</li>
             <li>Nike Privacy Policy</li>

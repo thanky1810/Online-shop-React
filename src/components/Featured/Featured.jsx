@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import styles from "./Featured.module.css";
+import styles from "./Featured.module.scss";
 import nikeAva from "../../assets/images/nike’s-best-cushioned-shoes-for-running-and-walking.png";
 import nikeVomero from "../../assets/images/Nike-Vomero-Plus-cover-1024x682.png";
 
