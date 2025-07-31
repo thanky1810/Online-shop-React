@@ -1,10 +1,15 @@
 import clsx from "clsx";
+import { useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./Footer.module.scss";
+import { openDetails, closeDetails } from "./functions";
 
 function Footer() {
+  const detailsRef = useRef(null);
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className={clsx(styles.footerWrapper)}>
       <footer className={clsx(styles.footerContentInfo)}>
@@ -63,10 +68,18 @@ function Footer() {
                 <span>© 2025 Nike, Inc. All Rights Reserved</span>
               </p>
             </li>
-            <li>
-              <div className={clsx(styles.guidesWrapper)}>
-                <details className={clsx(styles.guidesDetail)} open>
-                  <summary aria-expanded="true">
+            <li className={clsx(styles.li)}>
+              <div
+                className={clsx(styles.guidesWrapper)}
+                onMouseOver={() => openDetails(detailsRef, setIsOpen)}
+                onMouseLeave={() => closeDetails(detailsRef, setIsOpen)}
+              >
+                <details ref={detailsRef} className={clsx(styles.guidesDetail)}>
+                  <summary
+                    aria-expanded={isOpen ? "true" : "false"}
+                    onMouseOver={() => openDetails(detailsRef, setIsOpen)}
+                    onMouseLeave={() => closeDetails(detailsRef, setIsOpen)}
+                  >
                     <p>Guides</p>
                   </summary>
                   <div className={clsx(styles.footerDropdown)}>
@@ -128,11 +141,11 @@ function Footer() {
                 </details>
               </div>
             </li>
-            <li>Terms of Sale</li>
-            <li>Terms of Use</li>
-            <li>Nike Privacy Policy</li>
-            <li>Your Privacy Choices</li>
-            <li>CA Supply Chains Act</li>
+            <li className={clsx(styles.li)}>Terms of Sale</li>
+            <li className={clsx(styles.li)}>Terms of Use</li>
+            <li className={clsx(styles.li)}>Nike Privacy Policy</li>
+            <li className={clsx(styles.li)}>Your Privacy Choices</li>
+            <li className={clsx(styles.li)}>CA Supply Chains Act</li>
           </ul>
         </div>
       </footer>
