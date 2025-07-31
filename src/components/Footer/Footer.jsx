@@ -1,5 +1,8 @@
-import styles from "./Footer.module.css";
 import clsx from "clsx";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+
+import styles from "./Footer.module.css";
 
 function Footer() {
   return (
@@ -44,12 +47,29 @@ function Footer() {
             <a href="#">Birthday</a>
           </div>
           <div className={clsx(styles.footerLanguge)}>
-            <button>
-              <span></span>
+            <button className={clsx(styles.languageBtn)}>
+              <span>
+                <FontAwesomeIcon icon={faGlobe} />
+              </span>
               United States
             </button>
           </div>
-          <div className={clsx(styles.footerEnd)}></div>
+        </div>
+        <div className={clsx(styles.footerSpacer)}></div>
+        <div className={clsx(styles.footerEnd)}>
+          <ul className={clsx(styles.footerList)}>
+            <li>
+              <p>
+                <span>© 2025 Nike, Inc. All Rights Reserved</span>
+              </p>
+            </li>
+            <li>Guides</li>
+            <li>Terms of Sale</li>
+            <li>Terms of Use</li>
+            <li>Nike Privacy Policy</li>
+            <li>Your Privacy Choices</li>
+            <li>CA Supply Chains Act</li>
+          </ul>
         </div>
       </footer>
     </div>
