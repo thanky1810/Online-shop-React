@@ -1,3 +1,8 @@
+header {
+  display: block;
+  unicode-bidi: isolate;
+}
+
 div {
   margin: 0;
   padding: 0;
@@ -95,7 +100,8 @@ a {
 }
 
 .navItem a:hover {
-  color: #0066cc;
+  // color: #fff;
+  opacity: 0.6;
 }
 
 .userMenuWrapper {
@@ -106,7 +112,6 @@ a {
 .linkContainer {
   display: flex;
   align-items: center;
-  gap: 16px;
   margin: 0;
 }
 
@@ -123,7 +128,8 @@ a {
 }
 
 .linkItem a:hover {
-  color: #0066cc;
+  // color: #fff;
+  opacity: 0.6;
 }
 
 .searchInput {
@@ -140,5 +146,22 @@ a {
 }
 
 .icon:hover {
-  color: #0066cc;
+  // color: #fff;
+  opacity: 0.6;
+}
+
+.line {
+  border-right: 1px solid;
+  height: 12px;
+  margin: 12px;
+}
+
+.Icon {
+  color: #111111;
+}
+
+.noAnimation {
+  transition: none;
+  position: relative;
+  z-index: 2;
 }
