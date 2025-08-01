@@ -6,6 +6,9 @@ import styles from "./header.module.scss";
 import NikeIcon from "../../assets/icons/nike.svg?react";
 import ConverseIcon from "../../assets/icons/converse.svg?react";
 import JordanIcon from "../../assets/icons/jordan.svg?react";
+import SpaceIcon from "../../assets/icons/space.svg?react";
+import HeartIcon from "../../assets/icons/heart.svg?react";
+import BagShopping from "../../assets/icons/bagShopping.svg?react";
 
 function Header() {
   return (
@@ -47,7 +50,7 @@ function Header() {
       <header className={clsx(styles.noAnimation)}>
         <div className={clsx(styles.pre1Header)}>
           <div className={clsx(styles.ndsGrid)}>
-            <div className={clsx(styles.brandSection)}>
+            <div className={clsx(styles.brandSection, "nds-grid-item")}>
               <a href="#" aria-label="Nike">
                 <NikeIcon
                   width="72px"
@@ -56,7 +59,7 @@ function Header() {
                 />
               </a>
             </div>
-            <div className={clsx(styles.topBarContainer)}>
+            <div className={clsx(styles.topBarContainer, "nds-grid-item")}>
               <nav
                 aria-label="Main Navigation"
                 className={clsx(styles.navSection)}
@@ -67,15 +70,10 @@ function Header() {
                       <a href="#" className={clsx(styles.menuLink)}>
                         Men
                       </a>
-                      <details className={clsx(styles.listDetail)}></details>
-                    </div>
-                  </li>
-                  <li>
-                    <div className={clsx(styles.navItem)}>
-                      <a href="#" className={clsx(styles.menuLink)}>
-                        Men
-                      </a>
-                      <details className={clsx(styles.listDetail)}></details>
+                      <details className={clsx(styles.listDetail)}>
+                        <SpaceIcon width="24px" height="24px" />
+                        <div></div>
+                      </details>
                     </div>
                   </li>
                   <li>
@@ -83,7 +81,10 @@ function Header() {
                       <a href="#" className={clsx(styles.menuLink)}>
                         Women
                       </a>
-                      <details className={clsx(styles.listDetail)}></details>
+                      <details className={clsx(styles.listDetail)}>
+                        <SpaceIcon width="24px" height="24px" />
+                        <div></div>
+                      </details>
                     </div>
                   </li>
                   <li>
@@ -91,7 +92,10 @@ function Header() {
                       <a href="#" className={clsx(styles.menuLink)}>
                         Kids
                       </a>
-                      <details className={clsx(styles.listDetail)}></details>
+                      <details className={clsx(styles.listDetail)}>
+                        <SpaceIcon width="24px" height="24px" />
+                        <div></div>
+                      </details>
                     </div>
                   </li>
                   <li>
@@ -99,7 +103,10 @@ function Header() {
                       <a href="#" className={clsx(styles.menuLink)}>
                         Jordan
                       </a>
-                      <details className={clsx(styles.listDetail)}></details>
+                      <details className={clsx(styles.listDetail)}>
+                        <SpaceIcon width="24px" height="24px" />
+                        <div></div>
+                      </details>
                     </div>
                   </li>
                   <li>
@@ -107,7 +114,10 @@ function Header() {
                       <a href="#" className={clsx(styles.menuLink)}>
                         Men
                       </a>
-                      <details className={clsx(styles.listDetail)}></details>
+                      <details className={clsx(styles.listDetail)}>
+                        <SpaceIcon width="24px" height="24px" />
+                        <div></div>
+                      </details>
                     </div>
                   </li>
                   <li>
@@ -115,34 +125,25 @@ function Header() {
                       <a href="#" className={clsx(styles.menuLink)}>
                         Sale
                       </a>
-                      <details className={clsx(styles.listDetail)}></details>
+                      <details className={clsx(styles.listDetail)}>
+                        <SpaceIcon width="24px" height="24px" />
+                        <div></div>
+                      </details>
                     </div>
                   </li>
                 </ul>
               </nav>
             </div>
-            <div className={clsx(styles.userMenuWrapper)}>
-              <nav className={clsx(styles.umwNav)}>
-                <ul className={clsx(styles.linkContainer)}>
-                  <li className={clsx(styles.linkItem)}>
-                    <input
-                      type="text"
-                      placeholder="Search"
-                      className={clsx(styles.searchInput)}
-                    />
-                  </li>
-                  <li className={clsx(styles.linkItem)}>
-                    <a href="#">
-                      <span className={styles.icon}>❤️</span>
-                    </a>
-                  </li>
-                  <li className={clsx(styles.linkItem)}>
-                    <a href="#">
-                      <span className={styles.icon}>🛒</span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
+            <div className={clsx(styles.userMenuWrapper, "nds-grid-item")}>
+              <div className={clsx(styles.userToolsContainer)}>
+                <search></search>
+                <a href="" className={clsx(styles.btnIcon)}>
+                  <HeartIcon />
+                </a>
+                <a href="" className={clsx(styles.btnIcon)}>
+                  <BagShopping />
+                </a>
+              </div>
             </div>
           </div>
         </div>

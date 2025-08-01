@@ -60,6 +60,7 @@ a {
 
 .ndsGrid {
   padding: 0 48px;
+  grid-template-columns: repeat(12, 1fr);
   max-width: 1920px;
   margin: 0 auto;
   display: grid;
@@ -94,7 +95,7 @@ a {
 }
 
 .navList {
-  width: calc(100% - 330px);
+  width: calc(100%);
   display: flex;
   justify-content: center;
   margin: 0;
@@ -125,6 +126,7 @@ a {
 .userMenuWrapper {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .linkContainer {
@@ -159,8 +161,11 @@ a {
 }
 
 .icon {
+  height: 100%;
+  width: 100%;
   font-size: 20px;
   color: #111111;
+  transform: scale(1.33);
 }
 
 .icon:hover {
@@ -174,12 +179,39 @@ a {
   margin: 12px;
 }
 
-.Icon {
-  color: #111111;
-}
-
 .noAnimation {
   transition: none;
   position: relative;
   z-index: 2;
+}
+
+.listDetail {
+  display: block;
+}
+.listDetail > summary {
+  list-style: none;
+  opacity: 0s;
+}
+.nds-grid-item {
+}
+
+.userMenuWrapper {
+  grid-column: span 3;
+}
+
+.userToolsContainer {
+  float: right;
+  gap: 4px;
+  display: flex;
+}
+
+.btnIcon {
+  background: inherit;
+  color: #111111;
+  padding: 6px;
+  width: unset;
+  min-height: unset;
+  flex: 0 0 auto;
+  text-decoration: none;
+  text-align: center;
 }
