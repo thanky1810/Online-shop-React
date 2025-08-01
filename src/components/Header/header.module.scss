@@ -26,6 +26,7 @@ ul {
 
 a {
   cursor: pointer;
+  background-color: transparent;
 }
 
 .globalContainer {
@@ -103,16 +104,22 @@ a {
   max-width: 1255px;
 }
 
-.navItem a {
-  color: #111111;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
+.navItem {
+  background-color: #ffffff;
+  display: flex;
+  padding-bottom: 0px;
+  padding-left: 12px;
+  min-height: 60px;
+  align-items: center;
 }
 
-.navItem a:hover {
-  // color: #fff;
-  opacity: 0.6;
+.menuLink {
+  color: #111111;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .userMenuWrapper {

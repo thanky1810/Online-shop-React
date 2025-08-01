@@ -62,23 +62,61 @@ function Header() {
                 className={clsx(styles.navSection)}
               >
                 <ul className={clsx(styles.navList)}>
-                  <li className={clsx(styles.navItem)}>
-                    <a href="#">Men</a>
+                  <li>
+                    <div className={clsx(styles.navItem)}>
+                      <a href="#" className={clsx(styles.menuLink)}>
+                        Men
+                      </a>
+                      <details className={clsx(styles.listDetail)}></details>
+                    </div>
                   </li>
-                  <li className={clsx(styles.navItem)}>
-                    <a href="#">Women</a>
+                  <li>
+                    <div className={clsx(styles.navItem)}>
+                      <a href="#" className={clsx(styles.menuLink)}>
+                        Men
+                      </a>
+                      <details className={clsx(styles.listDetail)}></details>
+                    </div>
                   </li>
-                  <li className={clsx(styles.navItem)}>
-                    <a href="#">Kids</a>
+                  <li>
+                    <div className={clsx(styles.navItem)}>
+                      <a href="#" className={clsx(styles.menuLink)}>
+                        Women
+                      </a>
+                      <details className={clsx(styles.listDetail)}></details>
+                    </div>
                   </li>
-                  <li className={clsx(styles.navItem)}>
-                    <a href="#">Jordan</a>
+                  <li>
+                    <div className={clsx(styles.navItem)}>
+                      <a href="#" className={clsx(styles.menuLink)}>
+                        Kids
+                      </a>
+                      <details className={clsx(styles.listDetail)}></details>
+                    </div>
                   </li>
-                  <li className={clsx(styles.navItem)}>
-                    <a href="#">Sport</a>
+                  <li>
+                    <div className={clsx(styles.navItem)}>
+                      <a href="#" className={clsx(styles.menuLink)}>
+                        Jordan
+                      </a>
+                      <details className={clsx(styles.listDetail)}></details>
+                    </div>
                   </li>
-                  <li className={clsx(styles.navItem)}>
-                    <a href="#">Sale</a>
+                  <li>
+                    <div className={clsx(styles.navItem)}>
+                      <a href="#" className={clsx(styles.menuLink)}>
+                        Men
+                      </a>
+                      <details className={clsx(styles.listDetail)}></details>
+                    </div>
+                  </li>
+                  <li>
+                    <div className={clsx(styles.navItem)}>
+                      <a href="#" className={clsx(styles.menuLink)}>
+                        Sale
+                      </a>
+                      <details className={clsx(styles.listDetail)}></details>
+                    </div>
                   </li>
                 </ul>
               </nav>
