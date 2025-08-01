@@ -54,42 +54,53 @@ a {
 }
 
 .pre1Header {
-  height: 60px;
-}
-
-.commerceHeaderWrapper {
-  background: #fff;
   position: relative;
-  z-index: 3;
-  border-bottom: 1px solid #e6e6e6;
 }
 
-.topBarContainer {
+.ndsGrid {
   padding: 0 48px;
   max-width: 1920px;
   margin: 0 auto;
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: space-between;
+}
+
+.topBarContainer {
   height: 60px;
+  grid-column: span 7;
 }
 
 .brandSection {
-  display: flex;
-  align-items: center;
+  display: inline-flex;
+  height: 60px;
+  grid-column: span 2;
+
+  a {
+    z-index: 1;
+    display: inline-block;
+    height: 59px;
+    width: 59px;
+    margin: 1px 0;
+  }
 }
 
 .navSection {
-  display: flex;
-  align-items: center;
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
 }
 
 .navList {
+  width: calc(100% - 330px);
   display: flex;
-  gap: 24px;
-  list-style: none;
+  justify-content: center;
   margin: 0;
-  padding: 0;
+  height: 60px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  max-width: 1255px;
 }
 
 .navItem a {

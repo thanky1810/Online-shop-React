@@ -46,64 +46,65 @@ function Header() {
       {/* Main Header */}
       <header className={clsx(styles.noAnimation)}>
         <div className={clsx(styles.pre1Header)}>
-          <div className={clsx(styles.commerceHeaderWrapper)}>
+          <div className={clsx(styles.ndsGrid)}>
+            <div className={clsx(styles.brandSection)}>
+              <a href="#" aria-label="Nike">
+                <NikeIcon
+                  width="72px"
+                  height="72px"
+                  className={clsx(styles.Icon)}
+                />
+              </a>
+            </div>
             <div className={clsx(styles.topBarContainer)}>
-              <div className={clsx(styles.brandSection)}>
-                <a href="#" aria-label="Nike">
-                  <NikeIcon
-                    width="72px"
-                    height="72px"
-                    className={clsx(styles.Icon)}
-                  />
-                </a>
-              </div>
-              <div className={clsx(styles.navSection)}>
-                <nav aria-label="Main Navigation">
-                  <ul className={clsx(styles.navList)}>
-                    <li className={clsx(styles.navItem)}>
-                      <a href="#">Men</a>
-                    </li>
-                    <li className={clsx(styles.navItem)}>
-                      <a href="#">Women</a>
-                    </li>
-                    <li className={clsx(styles.navItem)}>
-                      <a href="#">Kids</a>
-                    </li>
-                    <li className={clsx(styles.navItem)}>
-                      <a href="#">Jordan</a>
-                    </li>
-                    <li className={clsx(styles.navItem)}>
-                      <a href="#">Sport</a>
-                    </li>
-                    <li className={clsx(styles.navItem)}>
-                      <a href="#">Sale</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-              <div className={clsx(styles.userMenuWrapper)}>
-                <nav className={clsx(styles.umwNav)}>
-                  <ul className={clsx(styles.linkContainer)}>
-                    <li className={clsx(styles.linkItem)}>
-                      <input
-                        type="text"
-                        placeholder="Search"
-                        className={clsx(styles.searchInput)}
-                      />
-                    </li>
-                    <li className={clsx(styles.linkItem)}>
-                      <a href="#">
-                        <span className={styles.icon}>❤️</span>
-                      </a>
-                    </li>
-                    <li className={clsx(styles.linkItem)}>
-                      <a href="#">
-                        <span className={styles.icon}>🛒</span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
+              <nav
+                aria-label="Main Navigation"
+                className={clsx(styles.navSection)}
+              >
+                <ul className={clsx(styles.navList)}>
+                  <li className={clsx(styles.navItem)}>
+                    <a href="#">Men</a>
+                  </li>
+                  <li className={clsx(styles.navItem)}>
+                    <a href="#">Women</a>
+                  </li>
+                  <li className={clsx(styles.navItem)}>
+                    <a href="#">Kids</a>
+                  </li>
+                  <li className={clsx(styles.navItem)}>
+                    <a href="#">Jordan</a>
+                  </li>
+                  <li className={clsx(styles.navItem)}>
+                    <a href="#">Sport</a>
+                  </li>
+                  <li className={clsx(styles.navItem)}>
+                    <a href="#">Sale</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div className={clsx(styles.userMenuWrapper)}>
+              <nav className={clsx(styles.umwNav)}>
+                <ul className={clsx(styles.linkContainer)}>
+                  <li className={clsx(styles.linkItem)}>
+                    <input
+                      type="text"
+                      placeholder="Search"
+                      className={clsx(styles.searchInput)}
+                    />
+                  </li>
+                  <li className={clsx(styles.linkItem)}>
+                    <a href="#">
+                      <span className={styles.icon}>❤️</span>
+                    </a>
+                  </li>
+                  <li className={clsx(styles.linkItem)}>
+                    <a href="#">
+                      <span className={styles.icon}>🛒</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
