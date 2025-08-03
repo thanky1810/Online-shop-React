@@ -1123,7 +1123,166 @@ function Header() {
                       <details className={clsx(styles.listDetail)}>
                         <SpaceIcon width="24px" height="24px" />
                         <div className={clsx(styles.dropDownDetailsContent)}>
-                          <div></div>
+                          {/* Back to school sale */}
+                          <div className={clsx(styles.content)}>
+                            <ul>
+                              <li className={clsx(styles.dropDownSubListTitle)}>
+                                <a href="#">
+                                  <p className={clsx(styles.ndsText)}>
+                                    Back to School Sale
+                                  </p>
+                                </a>
+                              </li>
+                              <li className={clsx(styles.dropDownSubListItem)}>
+                                <a href="#">
+                                  <p className={clsx(styles.ndsText)}>
+                                    Extra 20% Off Select Styles
+                                  </p>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          {/* All Sale */}
+                          <div className={clsx(styles.content)}>
+                            <ul>
+                              <li className={clsx(styles.dropDownSubListTitle)}>
+                                <a href="#">
+                                  <p className={clsx(styles.ndsText)}>
+                                    All Sale
+                                  </p>
+                                </a>
+                              </li>
+                              <li className={clsx(styles.dropDownSubListItem)}>
+                                <a href="#">
+                                  <p className={clsx(styles.ndsText)}>
+                                    Sale Shoes
+                                  </p>
+                                </a>
+                              </li>
+                              <li className={clsx(styles.dropDownSubListItem)}>
+                                <a href="#">
+                                  <p className={clsx(styles.ndsText)}>
+                                    Sale Clothing
+                                  </p>
+                                </a>
+                              </li>
+                              <li className={clsx(styles.dropDownSubListItem)}>
+                                <a href="#">
+                                  <p className={clsx(styles.ndsText)}>
+                                    Sale Assessories
+                                  </p>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          {/* Men */}
+                          <div className={clsx(styles.content)}>
+                            <ul>
+                              <li className={clsx(styles.dropDownSubListTitle)}>
+                                <a href="#">
+                                  <p className={clsx(styles.ndsText)}>Men</p>
+                                </a>
+                              </li>
+                              <li className={clsx(styles.dropDownSubListItem)}>
+                                <a href="#">
+                                  <p className={clsx(styles.ndsText)}>Shoes</p>
+                                </a>
+                              </li>
+                              <li className={clsx(styles.dropDownSubListItem)}>
+                                <a href="#">
+                                  <p className={clsx(styles.ndsText)}>
+                                    Clothing
+                                  </p>
+                                </a>
+                              </li>
+                              <li className={clsx(styles.dropDownSubListItem)}>
+                                <a href="#">
+                                  <p className={clsx(styles.ndsText)}>
+                                    Assessories
+                                  </p>
+                                </a>
+                              </li>
+                              <li className={clsx(styles.dropDownSubListItem)}>
+                                <a href="#">
+                                  <p className={clsx(styles.ndsText)}>
+                                    Shop All
+                                  </p>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          {/* Women */}
+                          <div className={clsx(styles.content)}>
+                            <ul>
+                              <li className={clsx(styles.dropDownSubListTitle)}>
+                                <a href="#">
+                                  <p className={clsx(styles.ndsText)}>Women</p>
+                                </a>
+                              </li>
+                              <li className={clsx(styles.dropDownSubListItem)}>
+                                <a href="#">
+                                  <p className={clsx(styles.ndsText)}>Shoes</p>
+                                </a>
+                              </li>
+                              <li className={clsx(styles.dropDownSubListItem)}>
+                                <a href="#">
+                                  <p className={clsx(styles.ndsText)}>
+                                    Clothing
+                                  </p>
+                                </a>
+                              </li>
+                              <li className={clsx(styles.dropDownSubListItem)}>
+                                <a href="#">
+                                  <p className={clsx(styles.ndsText)}>
+                                    Assessories
+                                  </p>
+                                </a>
+                              </li>
+                              <li className={clsx(styles.dropDownSubListItem)}>
+                                <a href="#">
+                                  <p className={clsx(styles.ndsText)}>
+                                    Shop All
+                                  </p>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          {/* Kid */}
+                          <div className={clsx(styles.content)}>
+                            <ul>
+                              <li className={clsx(styles.dropDownSubListTitle)}>
+                                <a href="#">
+                                  <p className={clsx(styles.ndsText)}>Kid</p>
+                                </a>
+                              </li>
+                              <li className={clsx(styles.dropDownSubListItem)}>
+                                <a href="#">
+                                  <p className={clsx(styles.ndsText)}>Shoes</p>
+                                </a>
+                              </li>
+                              <li className={clsx(styles.dropDownSubListItem)}>
+                                <a href="#">
+                                  <p className={clsx(styles.ndsText)}>
+                                    Clothing
+                                  </p>
+                                </a>
+                              </li>
+                              <li className={clsx(styles.dropDownSubListItem)}>
+                                <a href="#">
+                                  <p className={clsx(styles.ndsText)}>
+                                    Assessories
+                                  </p>
+                                </a>
+                              </li>
+                              <li className={clsx(styles.dropDownSubListItem)}>
+                                <a href="#">
+                                  <p className={clsx(styles.ndsText)}>
+                                    Shop All
+                                  </p>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
                       </details>
                     </div>
