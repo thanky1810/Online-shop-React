@@ -4,8 +4,7 @@ import clsx from "clsx";
 import styles from "./header.module.scss";
 import { navData } from "./navData";
 import SpaceIcon from "../../assets/icons/space.svg?react";
-
-export default function NavDropdown() {
+function NavDropdown() {
   const [activeIndex, setActiveIndex] = useState(null);
 
   return (
@@ -14,51 +13,50 @@ export default function NavDropdown() {
         {navData.map((item, index) => (
           <li key={index}>
             <div
-              className={clsx(styles.navItem)}
               onMouseEnter={() => setActiveIndex(index)}
               onMouseLeave={() => setActiveIndex(null)}
+              className={clsx(styles.navItem, {
+                [styles.navActived]: activeIndex == index,
+              })}
             >
               <a href="#" className={clsx(styles.menuLink)}>
                 {item.label}
               </a>
-              <details
+              <div
                 open={activeIndex === index}
                 className={clsx(styles.listDetail)}
               >
                 <SpaceIcon width="24px" height="24px" />
-                <div className={clsx(styles.dropDownDetailsContent)}>
+                <div
+                  className={clsx(styles.dropDownDetailsContent, {
+                    [styles.dropDownActive]: activeIndex == index,
+                  })}
+                >
                   {item.sections.map((section, sIndex) => (
-                    <div
-                      key={sIndex}
-                      className={clsx(styles.dropDownDetailsContent)}
-                    >
-                      <div className={clsx(styles.content)}>
-                        <ul>
-                          <li className={clsx(styles.dropDownSubListTitle)}>
+                    <div key={sIndex} className={clsx(styles.content)}>
+                      <ul>
+                        <li className={clsx(styles.dropDownSubListTitle)}>
+                          <a href="#">
+                            <p className={clsx(styles.ndsText)}>
+                              {section.title}
+                            </p>
+                          </a>
+                        </li>
+                        {section.items.map((subItem, i) => (
+                          <li
+                            key={i}
+                            className={clsx(styles.dropDownSubListItem)}
+                          >
                             <a href="#">
-                              <p className={clsx(styles.ndsText)}>
-                                {section.title}
-                              </p>
+                              <p className={clsx(styles.ndsText)}>{subItem}</p>
                             </a>
                           </li>
-                          {section.items.map((subItem, i) => (
-                            <li
-                              key={i}
-                              className={clsx(styles.dropDownSubListItem)}
-                            >
-                              <a href="#">
-                                <p className={clsx(styles.ndsText)}>
-                                  {subItem}
-                                </p>
-                              </a>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
+                        ))}
+                      </ul>
                     </div>
                   ))}
                 </div>
-              </details>
+              </div>
             </div>
           </li>
         ))}
@@ -66,3 +64,5 @@ export default function NavDropdown() {
     </nav>
   );
 }
+
+export default NavDropdown;

@@ -24,6 +24,12 @@ ul {
   list-style-type: none;
 }
 
+li {
+  display: list-item;
+  unicode-bidi: isolate;
+  cursor: pointer;
+}
+
 a {
   cursor: pointer;
   background-color: transparent;
@@ -175,6 +181,8 @@ a {
   transition: none;
   position: relative;
   z-index: 2;
+  display: block;
+  unicode-bidi: isolate;
 }
 
 .listDetail {
@@ -212,6 +220,7 @@ a {
   padding-left: 12px;
   min-height: 60px;
   align-items: center;
+  position: static;
 }
 
 .navActived {
@@ -231,7 +240,8 @@ a {
   position: absolute;
   overflow: hidden;
   max-height: 0;
-
+  display: flex;
+  flex-direction: row;
   top: 60px;
   left: 0;
   right: 0;
@@ -247,6 +257,7 @@ a {
 }
 
 .content {
+  display: flex;
   opacity: 0;
   transform: translateY(-10px);
   transition: transform 100ms, opacity 100ms;
