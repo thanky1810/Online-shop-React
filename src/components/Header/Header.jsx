@@ -1,3 +1,4 @@
+import { useState } from "react";
 import clsx from "clsx";
 import styles from "./header.module.scss";
 
@@ -9,8 +10,10 @@ import JordanIcon from "../../assets/icons/jordan.svg?react";
 import SpaceIcon from "../../assets/icons/space.svg?react";
 import HeartIcon from "../../assets/icons/heart.svg?react";
 import BagShopping from "../../assets/icons/bagShopping.svg?react";
-
+import { openDetails, closeDetails } from "./functions";
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className={clsx(styles.globalContainer)}>
       {/* Top Bar */}
@@ -66,13 +69,17 @@ function Header() {
               >
                 <ul className={clsx(styles.navList)}>
                   <li>
-                    <div className={clsx(styles.navItem)}>
+                    <div
+                      onMouseOver={() => openDetails(setIsOpen)}
+                      onMouseLeave={() => closeDetails(setIsOpen)}
+                      className={clsx(styles.navItem)}
+                    >
                       <a href="#" className={clsx(styles.menuLink)}>
                         Men
                       </a>
                       <details className={clsx(styles.listDetail)}>
                         <SpaceIcon width="24px" height="24px" />
-                        <div className={clsx(styles.dropDownDetailsContent)}>
+                        <div className={clsx(styles.dropDownDetailsContent, )}>
                           <div className={clsx(styles.content)}>
                             <ul>
                               <li className={clsx(styles.dropDownSubListTitle)}>
@@ -676,7 +683,10 @@ function Header() {
                     </div>
                   </li>
                   <li>
-                    <div className={clsx(styles.navItem)}>
+                    <div
+                      className={clsx(styles.navItem)}
+                      onMouseOver={() => handleOver()}
+                    >
                       <a href="#" className={clsx(styles.menuLink)}>
                         Kids
                       </a>

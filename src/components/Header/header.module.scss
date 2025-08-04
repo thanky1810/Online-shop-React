@@ -236,13 +236,13 @@ a {
 }
 
 /* Show on hover */
-.navItem:hover .dropDownDetailsContent {
+.actived {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
 }
 
-.navItem:hover .dropDownDetailsContent .content {
+.contentActived {
   opacity: 1;
   transition: opacity 200ms ease-in;
 }

@@ -1,7 +1,6 @@
 function openDetails(detailsRef, setIsOpen) {
   if (detailsRef.current) {
-    detailsRef.current.setAttribute("open", "");
-    setIsOpen(true);
+    detailsRef.current.ClassList.add("actived");
   }
 }
 
