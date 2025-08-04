@@ -31,7 +31,7 @@ a {
 
 .globalContainer {
   position: relative;
-  z-index: 20;
+  z-index: 2;
 }
 
 .topBar {
@@ -101,7 +101,7 @@ a {
   margin: 0;
   height: 60px;
   flex-wrap: wrap;
-  overflow: hidden;
+  overflow: visible;
   max-width: 1255px;
 }
 
@@ -206,44 +206,55 @@ a {
 }
 
 .navItem {
-  position: relative;
   background-color: #ffffff;
   display: flex;
-  padding: 0 12px;
+  padding-bottom: 0px;
+  padding-left: 12px;
   min-height: 60px;
   align-items: center;
 }
 
 .navActived {
+  transition: transform ease, opacity 0ms linear 250ms,
+    visibility 0ms linear 250ms;
+  -webkit-box-align: center;
   z-index: 3;
 }
 
 .dropDownDetailsContent {
   background-color: #ffffff;
   padding: 0 48px 36px 48px;
+  overflow-wrap: normal;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
   position: absolute;
+  overflow: hidden;
+  max-height: 0;
+
   top: 60px;
   left: 0;
   right: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 250ms ease;
-  z-index: -1;
+  transition: max-height 250ms;
+  transform-origin: top center;
 }
 
 .dropDownActive {
-  max-height: 800px;
-  z-index: 3;
+  max-height: 500px;
+  height: auto;
+  transition: max-height 250ms;
+  z-index: 3 !important;
 }
 
 .content {
   opacity: 0;
   transform: translateY(-10px);
   transition: transform 100ms, opacity 100ms;
-  display: flex;
-  gap: 20px;
+  margin-left: 12px;
+  width: 16%;
+  max-width: 214px;
+  min-width: 134px;
+  overflow-wrap: normal;
 }
 
 .navActived .content {
@@ -255,10 +266,10 @@ a {
 
 /* Text and list styles */
 .dropDownSubListTitle {
-  color: #111111;
+  .ndsText {
+    color: #111111;
+  }
   font-weight: 500;
-  padding-top: 36px;
-  padding-bottom: 12px;
   display: list-item;
   text-align: -webkit-match-parent;
   unicode-bidi: isolate;

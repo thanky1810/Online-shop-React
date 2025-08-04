@@ -1,9 +1,7 @@
-function openDetails(setIsOpen) {
-  setIsOpen(true);
+export function openDetails(setOpenIndex, index) {
+  setOpenIndex(index);
 }
 
-function closeDetails(setIsOpen) {
-  setIsOpen(false);
+export function closeDetails(setOpenIndex) {
+  setOpenIndex(null);
 }
-
-export { openDetails, closeDetails };
