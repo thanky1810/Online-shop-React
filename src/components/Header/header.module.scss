@@ -105,16 +105,6 @@ a {
   max-width: 1255px;
 }
 
-.navItem {
-  display: relative;
-  background-color: #ffffff;
-  display: flex;
-  padding-bottom: 0px;
-  padding-left: 12px;
-  min-height: 60px;
-  align-items: center;
-}
-
 .menuLink {
   color: #111111;
   border-bottom: 2px solid transparent;
@@ -191,10 +181,7 @@ a {
   display: block;
 }
 .listDetail > summary {
-  list-style: none;
   opacity: 0;
-}
-.nds-grid-item {
 }
 
 .userMenuWrapper {
@@ -218,42 +205,52 @@ a {
   text-align: center;
 }
 
-/* Initial state: hidden */
+.navItem {
+  position: relative;
+  background-color: #ffffff;
+  display: flex;
+  padding: 0 12px;
+  min-height: 60px;
+  align-items: center;
+}
+
+.navActived {
+  z-index: 3;
+}
+
 .dropDownDetailsContent {
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(-12px);
-  transition: transform 300ms ease, opacity 200ms ease;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  right: 0;
   background-color: #ffffff;
   padding: 0 48px 36px 48px;
   display: flex;
   justify-content: center;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 250ms ease;
+  z-index: -1;
+}
+
+.dropDownActive {
+  max-height: 800px;
   z-index: 3;
 }
 
-/* Show on hover */
-.actived {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-
-.contentActived {
-  opacity: 1;
-  transition: opacity 200ms ease-in;
-}
-
-/* Content default state */
 .content {
   opacity: 0;
-  margin-left: 12px;
-  width: 16%;
-  max-width: 214px;
-  min-width: 134px;
+  transform: translateY(-10px);
+  transition: transform 100ms, opacity 100ms;
+  display: flex;
+  gap: 20px;
+}
+
+.navActived .content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 300ms, opacity 200ms linear;
+  transition-delay: 200ms;
 }
 
 /* Text and list styles */

@@ -72,14 +72,20 @@ function Header() {
                     <div
                       onMouseOver={() => openDetails(setIsOpen)}
                       onMouseLeave={() => closeDetails(setIsOpen)}
-                      className={clsx(styles.navItem)}
+                      className={clsx(styles.navItem, {
+                        [styles.actived]: isOpen,
+                      })}
                     >
                       <a href="#" className={clsx(styles.menuLink)}>
                         Men
                       </a>
-                      <details className={clsx(styles.listDetail)}>
+                      <div className={clsx(styles.listDetail)}>
                         <SpaceIcon width="24px" height="24px" />
-                        <div className={clsx(styles.dropDownDetailsContent, )}>
+                        <div
+                          className={clsx(styles.dropDownDetailsContent, {
+                            [styles.dropDownActive]: isOpen,
+                          })}
+                        >
                           <div className={clsx(styles.content)}>
                             <ul>
                               <li className={clsx(styles.dropDownSubListTitle)}>
@@ -344,7 +350,7 @@ function Header() {
                             </ul>
                           </div>
                         </div>
-                      </details>
+                      </div>
                     </div>
                   </li>
                   <li>
@@ -683,10 +689,7 @@ function Header() {
                     </div>
                   </li>
                   <li>
-                    <div
-                      className={clsx(styles.navItem)}
-                      onMouseOver={() => handleOver()}
-                    >
+                    <div className={clsx(styles.navItem)}>
                       <a href="#" className={clsx(styles.menuLink)}>
                         Kids
                       </a>
