@@ -7,8 +7,6 @@ import LessThanIcon from "../../assets/icons/lessThan.svg?react";
 import MoreThanIcon from "../../assets/icons/MoreThan.svg?react";
 
 function TopClassic() {
-  console.log(shoesData);
-
   return (
     <div className={clsx(styles.stcWrapper)}>
       <div className={clsx(styles.stcGrid)}>
@@ -24,9 +22,9 @@ function TopClassic() {
                 <div></div>
                 <div className={clsx(styles.ndsBtnWrapper)}>
                   <button className={clsx(styles.carouselBtn)}>
-                    <di className={clsx(styles.icon)}>
+                    <div className={clsx(styles.icon)}>
                       <LessThanIcon></LessThanIcon>
-                    </di>
+                    </div>
                   </button>
                   <button className={clsx(styles.carouselBtn)}>
                     <div className={clsx(styles.icon)}>
@@ -35,23 +33,28 @@ function TopClassic() {
                   </button>
                 </div>
               </div>
-              <ul>
+              <ul className={clsx(styles.slider)}>
                 {shoesData.map((item, index) => {
-                  <li>
-                    <figure>
-                      <div>
-                        <div>
-                          <div>
-                            <img src={item.img} />
+                  return (
+                    <li key={index} className={clsx(styles.sildeItem)}>
+                      <figure className={clsx(styles.figure)}>
+                        <div className={clsx(styles.wetubkUi)}>
+                          <div className={clsx(styles.wetChild)}>
+                            <div className={clsx(styles.imgContent)}>
+                              <img
+                                src={item.img}
+                                className={clsx(styles.img)}
+                              />
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div>
-                        <h3>{item.title}</h3>
-                      </div>
-                      <a href=""></a>
-                    </figure>
-                  </li>;
+                        <div className={clsx(styles.sildeTitle)}>
+                          <h3 className={clsx(styles.ndsText)}>{item.title}</h3>
+                        </div>
+                        <a href="#" className={clsx(styles.sildeA)}></a>
+                      </figure>
+                    </li>
+                  );
                 })}
               </ul>
             </section>
