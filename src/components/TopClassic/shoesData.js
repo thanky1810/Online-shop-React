@@ -1,35 +1,35 @@
 const shoesData = [
     {
         title: "Air Jordan 1",
-        img: "",
+        img: "../../assets/images/Topclassic/AF1.png",
         desc: "",
     }, {
         title: "Dunk",
-        img: "",
+        img: "../../assets/images/Topclassic/Dunk.png",
         desc: "",
     }, {
         title: "Field General",
-        img: "",
+        img: "../../assets/images/Topclassic/FG.png",
         desc: "",
     }, {
         title: "Air Force 1",
-        img: "",
+        img: "../../assets/images/Topclassic/AF1.png",
         desc: "",
     }, {
         title: "Air Max",
-        img: "",
+        img: "../../assets/images/Topclassic/AM.png",
         desc: "",
     }, {
         title: "Vomero",
-        img: "",
+        img: "../../assets/images/Topclassic/Vomero.png",
         desc: "",
     }, {
         title: "Cortez",
-        img: "",
+        img: "../../assets/images/Topclassic/Cortez.png",
         desc: "",
     }, {
         title: "C1TY",
-        img: "",
+        img: "../../assets/images/Topclassic/C1TY.png",
         desc: "",
     }
 ]
