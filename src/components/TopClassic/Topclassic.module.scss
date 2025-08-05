@@ -1,0 +1,140 @@
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+button {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: inherit;
+  border: none;
+  cursor: pointer;
+  line-height: inherit;
+  overflow: visible;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+}
+
+.stcWrapper {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  overflow-x: clip;
+  margin-top: 148px;
+  display: block;
+  color: #111111;
+}
+
+.stcGrid {
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 0;
+}
+
+.gridCol {
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+  vertical-align: top;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  min-height: 1px;
+  font-size: 16px;
+  line-height: 1.75px;
+}
+
+.filmStrip {
+  width: 100%;
+}
+
+.ndsCarousel {
+  color: hsla(240, 1%, 44%, 0);
+  overflow-x: visible;
+  position: relative;
+}
+
+.ndsBox {
+  padding-left: 0;
+  margin-block-end: 12px;
+  padding: 2px 24px 0 24px;
+  -webkit-box-align: center;
+  text-align: center;
+  color: #111111;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.headSection {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0;
+  width: 100%;
+}
+
+.headChild {
+  width: 100%;
+}
+
+.ndsText {
+  margin-left: 48px;
+  margin-right: 48px;
+  text-align: left;
+  font-weight: 500;
+  color: #111111;
+}
+
+.ndsBtnWrapper {
+  margin: 0 0 0 12px;
+  align-self: center;
+  display: flex;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-inline-start: 12px;
+}
+
+.carouselBtn {
+  display: flex;
+  color: #9e9ea0;
+  cursor: unset;
+  position: static;
+  transform: none;
+  padding: 0;
+  background: none;
+  border: 0;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.icon {
+  background-color: #f5f5f5;
+  height: 48px;
+  width: 48px;
+  border-radius: 24px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.25, 0.1, 0.25, 0.1);
+}
