@@ -1,4 +1,4 @@
-import { Header, Banner, Featured, Footer } from "../components";
+import { Header, Banner, Featured, Footer, TopClassic } from "../components";
 
 function Home() {
   return (
@@ -6,6 +6,7 @@ function Home() {
       <Header></Header>
       <Banner></Banner>
       <Featured></Featured>
+      <TopClassic></TopClassic>
       <Footer></Footer>
     </div>
   );
