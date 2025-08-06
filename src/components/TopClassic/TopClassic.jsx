@@ -5,6 +5,7 @@ import { shoesData } from "./shoesData";
 import AF1 from "../../assets/images/Topclassic/AF1.png";
 import LessThanIcon from "../../assets/icons/lessThan.svg?react";
 import MoreThanIcon from "../../assets/icons/MoreThan.svg?react";
+import { handleNext, handleBack } from "./functions";
 
 function TopClassic() {
   return (
@@ -22,11 +23,17 @@ function TopClassic() {
                 <div></div>
                 <div className={clsx(styles.ndsBtnWrapper)}>
                   <button className={clsx(styles.carouselBtn)}>
-                    <div className={clsx(styles.icon)}>
+                    <div
+                      onClick={() => handleNext()}
+                      lassName={clsx(styles.icon)}
+                    >
                       <LessThanIcon></LessThanIcon>
                     </div>
                   </button>
-                  <button className={clsx(styles.carouselBtn)}>
+                  <button
+                    onClick={() => handleBack()}
+                    className={clsx(styles.carouselBtn)}
+                  >
                     <div className={clsx(styles.icon)}>
                       <MoreThanIcon></MoreThanIcon>
                     </div>
@@ -44,6 +51,7 @@ function TopClassic() {
                               <img
                                 src={item.img}
                                 className={clsx(styles.img)}
+                                alt={item.desc}
                               />
                             </div>
                           </div>
