@@ -1,13 +1,16 @@
 import clsx from "clsx";
+import { useRef } from "react";
 
 import styles from "./Topclassic.module.scss";
 import { shoesData } from "./shoesData";
-import AF1 from "../../assets/images/Topclassic/AF1.png";
 import LessThanIcon from "../../assets/icons/lessThan.svg?react";
 import MoreThanIcon from "../../assets/icons/MoreThan.svg?react";
 import { handleNext, handleBack } from "./functions";
 
 function TopClassic() {
+
+  const ulRef = useRef(null);
+
   return (
     <div className={clsx(styles.stcWrapper)}>
       <div className={clsx(styles.stcGrid)}>
@@ -24,14 +27,14 @@ function TopClassic() {
                 <div className={clsx(styles.ndsBtnWrapper)}>
                   <button className={clsx(styles.carouselBtn)}>
                     <div
-                      onClick={() => handleNext()}
-                      lassName={clsx(styles.icon)}
+                      onClick={() => handleBack(ulRef)}
+                      className={clsx(styles.icon)}
                     >
                       <LessThanIcon></LessThanIcon>
                     </div>
                   </button>
                   <button
-                    onClick={() => handleBack()}
+                    onClick={() => handleNext(ulRef)}
                     className={clsx(styles.carouselBtn)}
                   >
                     <div className={clsx(styles.icon)}>
@@ -40,7 +43,7 @@ function TopClassic() {
                   </button>
                 </div>
               </div>
-              <ul className={clsx(styles.slider)}>
+              <ul ref={ulRef} className={clsx(styles.slider)}>
                 {shoesData.map((item, index) => {
                   return (
                     <li key={index} className={clsx(styles.sildeItem)}>
