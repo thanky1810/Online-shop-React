@@ -112,7 +112,7 @@ button {
 }
 
 .ndsText {
-  margin-left: 48px;
+  margin-left: 10px;
   margin-right: 48px;
   text-align: left;
   font-weight: 500;
@@ -161,7 +161,6 @@ button {
 }
 
 .slider {
-  transform: translateX(-50%);
   padding-bottom: 30px;
   padding-left: 0;
   padding-right: 0;
@@ -169,12 +168,15 @@ button {
   --slides-to-show: 7;
   --column-gap: 8px;
   color: inherit;
-  transition: color var(--podium-cds-transition-duration-normal) ease-in-out;
+  transition: color 250ms ease-in-out;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   display: flex;
   scroll-padding: 18px;
   scrollbar-color: transparent transparent;
+  &:hover {
+    scrollbar-color: #707072 transparent;
+  }
 }
 
 .sildeItem {
