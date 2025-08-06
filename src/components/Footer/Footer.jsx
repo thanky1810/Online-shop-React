@@ -74,14 +74,22 @@ function Footer() {
                 onMouseOver={() => openDetails(detailsRef, setIsOpen)}
                 onMouseLeave={() => closeDetails(detailsRef, setIsOpen)}
               >
-                <details ref={detailsRef} className={clsx(styles.guidesDetail)}>
+                <details
+                  ref={detailsRef}
+                  className={clsx(styles.guidesDetail)}
+                  
+                >
                   <summary
                     aria-expanded={isOpen ? "true" : "false"}
                     onMouseOver={() => openDetails(detailsRef, setIsOpen)}
                     onMouseLeave={() => closeDetails(detailsRef, setIsOpen)}
+                    className={clsx(styles.dropDownAccess)}
                   >
                     <p>Guides</p>
                   </summary>
+                  {isOpen && (
+                    <span data-forcus-scope-start="true" hidden></span>
+                  )}
                   <div className={clsx(styles.footerDropdown)}>
                     <div className={clsx(styles.linkContainer)}>
                       <ul>
@@ -138,6 +146,7 @@ function Footer() {
                       </ul>
                     </div>
                   </div>
+                  {isOpen && <span data-forcus-scope-end="true" hidden></span>}
                 </details>
               </div>
             </li>

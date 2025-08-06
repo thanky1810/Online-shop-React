@@ -161,3 +161,13 @@ h2 {
     }
   }
 }
+
+.dropDownAccess {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  opacity: 1;
+  color: #707072;
+  counter-increment: list-item 0;
+  list-style: inside disclosure-closed;
+}
