@@ -1,7 +1,5 @@
-function handleNext () {
-    
-}
+function handleNext() {}
 
-function handleBack () {
+function handleBack() {}
 
-}
+export { handleBack, handleNext };
