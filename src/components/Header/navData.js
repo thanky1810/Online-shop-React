@@ -1,8 +1,11 @@
 // navData.js
 
+
+
 export const navData = [
     {
         label: "Men",
+        link: "../../pages/Men/men",
         sections: [
             {
                 title: "New & Featured",
@@ -62,6 +65,7 @@ export const navData = [
     },
     {
         label: "Women",
+        link: "#",
         sections: [
             {
                 title: "New & Featured",
@@ -133,6 +137,7 @@ export const navData = [
     },
     {
         label: "Kids",
+        link: "#",
         sections: [
             {
                 title: "Shoes",
@@ -194,6 +199,7 @@ export const navData = [
     },
     {
         label: "Jordan",
+        link: "#",
         sections: [
             {
                 title: "New and Feature",
@@ -250,6 +256,7 @@ export const navData = [
     },
     {
         label: "Sport",
+        link: "#",
         sections: [
             {
                 title: "Basketball",
@@ -289,6 +296,7 @@ export const navData = [
     },
     {
         label: "Sale",
+        link: "#",
         sections: [
             {
                 title: "Back to School Sale",

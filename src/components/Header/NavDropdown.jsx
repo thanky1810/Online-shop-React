@@ -1,14 +1,17 @@
 // Header/NavDropdown.jsx
 import { useState } from "react";
 import clsx from "clsx";
+import { Link } from "react-router-dom";
+
 import styles from "./header.module.scss";
 import { navData } from "./navData";
 import SpaceIcon from "../../assets/icons/space.svg?react";
+
 function NavDropdown() {
   const [activeIndex, setActiveIndex] = useState(null);
 
   return (
-    <nav aria-label="Main Navigation" className={clsx(styles.navSection)}>
+    <nav aria-label="Main Navigation" className={clsx(styles.navSections)}>
       <ul className={clsx(styles.navList)}>
         {navData.map((item, index) => (
           <li key={index}>
@@ -19,9 +22,9 @@ function NavDropdown() {
                 [styles.navActived]: activeIndex == index,
               })}
             >
-              <a href="#" className={clsx(styles.menuLink)}>
+              <Link to={item.link} className={clsx(styles.menuLink)}>
                 {item.label}
-              </a>
+              </Link>
               <div
                 open={activeIndex === index}
                 className={clsx(styles.listDetail)}
