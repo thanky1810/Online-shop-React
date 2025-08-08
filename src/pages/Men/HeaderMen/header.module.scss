@@ -1,0 +1,124 @@
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  unicode-bidi: isolate;
+}
+
+ol,
+ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+a {
+  color: #111111;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+  background-color: transparent;
+}
+
+.headerWrapper {
+  position: relative;
+  margin-top: 0;
+  color: #111111;
+  background-color: #ffffff;
+}
+.ncssRow {
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 0;
+}
+.gridCol {
+  padding-left: 0;
+  padding-right: 0;
+  min-height: auto;
+  vertical-align: top;
+  width: 100%;
+  display: inline-block;
+  margin-left: 0;
+  position: relative;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+// fix
+.stickyOuterWrapper {
+  height: 104px;
+}
+.stickyInnerWrapper {
+  position: relative;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 5;
+}
+.ncssContainer {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 1824px;
+  width: auto;
+  flex-direction: row;
+  padding-top: 26px;
+  padding-bottom: 34px;
+  position: static;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background: #ffffff;
+  margin: 0 48px;
+}
+.ndsText {
+  padding-left: 0;
+  white-space: nowrap;
+  margin-right: 100px;
+  min-width: 175px;
+  transition: font-size 0.2s;
+  font-size: 24px;
+  font-weight: 500;
+}
+.barContainer {
+  padding-top: 0;
+  padding-left: 0;
+  margin-top: 12px;
+  width: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.barList {
+  text-align: center;
+  display: flex;
+
+  li {
+    display: inline-block;
+    margin: 0 16px;
+  }
+}
+.barItem {
+  color: #111111;
+  padding: 4px 0;
+  transition: color 0.2s ease-in-out;
+  font-weight: 500;
+}
+.hidden {
+  display: block;
+  visibility: hidden;
+  margin-left: 100px;
+  margin-right: 0;
+  overflow: hidden;
+  height: 0;
+  align-self: normal;
+  padding-left: 0;
+  min-width: 175px;
+  transition: font-size 0.2s;
+  font-size: 24px;
+  font-weight: 500;
+  white-space: nowrap;
+}
